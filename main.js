@@ -37,7 +37,7 @@ class GameScene extends Phaser.Scene {
     this.load.image("bg", "/assets/bgChristmas.avif");
     this.load.image("basket", "/assets/basket.png");
     this.load.image("gift", "/assets/gift.png");
-    this.load.image("money", "/assets/money.png");
+    this.load.image("star", "/assets/star.png");
     this.load.audio("coin", "/assets/coin.mp3");
     this.load.audio("bgMusic", "/assets/bgMusic.mp3");
   }
@@ -80,10 +80,10 @@ class GameScene extends Phaser.Scene {
 
     this.timedEvent = this.time.delayedCall(30000,this.gameOver,[], this)
 
-    this.emitter=this.add.particles(0,0,"stars",{
+    this.emitter=this.add.particles(0,0,"star",{
       speed:100,
       gravityY:speedDown-200,
-      scale:0.09,
+      scale:0.03,
       duration:100,
       emitting:false
     })
