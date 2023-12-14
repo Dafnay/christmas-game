@@ -49,7 +49,7 @@ class GameScene extends Phaser.Scene {
     this.coinMusic = this.sound.add("coin")
     this.bgMusic=this.sound.add("bgMusic")
     this.bgMusic.play()
-    this.bgMusic.stop()
+    // this.bgMusic.stop()
 
 
     this.add.image(0, 0, "bg").setOrigin(0, 0);
